@@ -7,21 +7,24 @@ int main() {
     std::cout << "Enter the value for N: " << std::endl; 
     std::cin >> max_num;   
 
-    double min_val, max_val, total_sum = 0; 
+    int min_val, max_val, total_sum = 0; 
 
     for (int i = 0; i < max_num; i++) {
 
         double k; 
         std::cin >> k;
         
+        // find the minimum 
         if (k < min_val) {
-            min_val = k; 
+            min_val = k;
         } 
 
+        // find the maximum 
         if (k > max_val) {
             max_val = k;
         }
 
+        // std::cout << "Min at " <<  i << " iteration: " << min_val;
         total_sum += k; 
     }
     
